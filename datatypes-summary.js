@@ -68,3 +68,27 @@ implement [[Call]])          	Implementation-defined except may not be "undefine
 ..........................................................................................
 
 */
+
+// 1 : STACK (Primitive)
+
+// 2 : HEAP (Non-Primitive)
+
+let myyoutubename = "Shariq alam"
+
+let anothername = myyoutubename;
+
+anothername = "SHARIQ"
+console.log(myyoutubename);
+console.log(anothername);
+
+let user1 = {
+    email : "SHARIQALAM@gmail.com",
+    pay : "user@pay"
+
+}
+
+let user2 = user1;
+user2.email = "Shariqalam@gmail.com"
+console.log(user1.email);
+console.log(user2.email);
+
