@@ -29,9 +29,53 @@ if (true) {
 a = 300 
 if (true) {
     let a = 30 
-    console.log("INNER : ", a);
+    // console.log("INNER : ", a);
     
 }                                   // THIS IS WHY WE USE ( let )
-console.log(a);
+// console.log(a);
 
 // ======================================================================================
+
+
+
+// function one(){
+//     const username = "SHARIQ ALAM"
+
+//     function two(){
+//         website = "YOUTUBE"
+//         console.log(username);
+//     }
+//     // console.log(website);
+
+//     two()
+// }
+// one()
+
+
+if (true) {
+    const username1 = "Shariq Alam"
+    if (username1 === "Shariq Alam") {
+        const wesite1 = "Youtube"
+        console.log(username1 + wesite1);
+    }
+    // console.log(wesite1);
+}
+// console.log(username1);
+
+
+// =============================== INTERESTING ================================
+
+
+// addOne(3)
+// function addOne(num){
+//     return num + 1                     // THIS DOESN'T GIVE AN ERROR WHILE THE OTHER ONE GIVES A ERROR
+// }                                      // WHEN THE DECELERATION IS PLACED BEFORE THE INITILIAZATION  
+
+
+addTwo(10)
+const addTwo = function(num){
+    return num + 2
+}
+
+
+// ============================= END =============================
