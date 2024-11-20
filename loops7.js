@@ -32,4 +32,4 @@ const shoppingCard = [
 ]
 
 const total = shoppingCard.reduce( (acc ,item) =>acc + item.Price, 0   )
-console.log(total);
+console.log(total  );
