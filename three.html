@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PART 4</title>
+</head>
+<body style="background-color: #212121; color: white;">
+
+
+    
+</body>
+
+
+<script>
+
+const divMain = document.createElement('div')
+console.log(divMain);
+divMain.className = "main"
+divMain.id = Math.round(Math.random() * 10)
+divMain.style.color = "green"
+divMain.style.padding = "20px"
+divMain.style.fontSize = "50px"
+// div.innerText = "HEY I AM DEVELOPER SHARIQ ALAM"
+const addText = document.createTextNode("HEY I A DEVELOPER SHARIQ ALAM")
+divMain.appendChild(addText)
+document.body.appendChild(divMain)
+
+</script>
+
+
+</html>
