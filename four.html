@@ -8,7 +8,7 @@
 <body style="background-color: #212121; color: white;">
     
     <ul class="language">
-        <li>JavaScript</li>
+        <li style="font-family: cursive;">JavaScript</li>
     </ul>
 
 </body>
@@ -20,14 +20,39 @@
     function addLanguage(langName){
         const li = document.createElement('li')
         li.innerHTML = `${langName}`
+        li.style.fontFamily = "cursive"
         document.querySelector('.language').appendChild(li)
     }
     addLanguage("Python")
-    addLanguage("C++")
+    addLanguage("Type Script")
 
 
-    function addOptiLanguage(langName){
+   function addOptiLanguage(langName){
+    const li = document.createElement('li')
+    li.style.fontFamily = "cursive"
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector(".language").appendChild(li)
+   }
+   addOptiLanguage("Golang")
 
-    }
+//    EDIT          HOW TO EDIT A VALUE
+
+const secondLang  = document.querySelector("li:nth-child(2)")
+console.log(secondLang);
+// secondLang.innerHTML = "Mojo"
+const newLi = document.createElement('li') 
+newLi.style.fontFamily = "cursive"   
+newLi.textContent = "Mojo"
+secondLang.replaceWith(newLi)
+
+// edit
+const firstLang = document.querySelector("li:first-child")
+firstLang.outerHTML = "<li>Type Script 1</li>"
+
+// remove
+
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+
 </script>
 </html>
