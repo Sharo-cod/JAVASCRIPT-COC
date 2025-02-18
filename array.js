@@ -1,62 +1,62 @@
-// ARRAYS _____________________________________________________________________
+const myArray = []
+// %DebugPrint(myArray)
 
-const myArr = [1,2,3,4,5 ,"SHARIQ ALAM"];
- console.log(myArr);
+// Continue And Holey Array 
 
- const myHeroes = ["superman", "spiderman" , "ironman"]
- console.log(myHeroes);
-
-
- const myArr2 = new Array(1,2,3,4)
- console.log(myArr2[0]);
-
-// // _____________________________________________________________________________
-
-// // ARRAY METHODS
+// SMI (small integer)
+// Packed Element
+// Double (float , sting , function)
 
 
-// // 1 : 
- myArr.push(6)
- myArr.push(7)
- myArr.push("SHARO-COD")          // TO ADD SOMETHING TO AN ARRAY
- console.log(myArr);
+const arrTwo = [1 , 2 , 3 , 4 , 5]
+
+// PACKED_SMI_ELEMENTS  
+
+arrTwo.push(6.0)
+
+// PACKED_DOUBLE_ELEMENTS
+
+arrTwo.push('7')
+// PACKED_ELEMENTS
+
+arrTwo[10] = 11
+// HOLEY ELEMENTS
+
+console.log(arrTwo);
+console.log(arrTwo.length);
+console.log(arrTwo[9]);
 
 
-// // 2 :
+// BOUND CHECK
+// hasOwnProperty(arrTwo, 9)
+// hasOwnProperty(arrTwo, 10)
+// hasOwnProperty(Object.Prototype,10)
 
- myArr.pop()
- console.log(myArr);             //  IT REMOVES THE LAST VALUE
-
-
-
-// // 3 : 
- myArr.unshift("sharo-cod")     // TO ADD SOMETHING TO THE START  
- console.log(myArr);
-
-// // 4 :
- myArr.shift(    )
- console.log(myArr);           // TO REMOVE SOMETHING FROM THE START
+// holes are very Expensive In JS
 
 
-// // 5 :
- console.log(myArr.includes(9));                //   CHECK OUT THE VALUES THAT EXIST OR NOT 
- console.log(myArr.includes("SHARIQ ALAM"));
+const arrThree = [1,2,3,4,5]
+console.log(arrThree[8]);
 
-// // 6 :
- const newArr = myArr.join();
- console.log(myArr);                    // CHANGES ARRAY INTO THE STRING AND SEPERATE IT ALL
-console.log(newArr);              
 
-// ____________________________________________________________________________
+// SMI > DOUBLE > PACKED
+// H_SMI > H_DOUBLE > H_PACKED
 
-// SLICE AND SPLICE :
+const arrFour = new Array(3)
+// just 3 holes. HOLEY_SMI_ELEMENTS
 
-console.log("A ", myArr);
+arrFour[0] = '1' // HOLEY_ELEMENTS
+arrFour[1] = '2' // HOLEY_ELEMENTS
+arrFour[2] = '3' // HOLEY_ELEMENTS
 
-const  myn1 = myArr.slice(0,2)
+const arrFive = []
+arrFive.push('1')// PACKED ELEMENTS
+arrFive.push('2')// PACKED ELEMENTS
+arrFive.push('3')// PACKED ELEMENTS
+console.log(arrFive);
 
-console.log(myn1);
-console.log("B " ,myArr);
 
-const  myn2 = myArr.splice(1,3)
-console.log(myn2);
+const arrSix = [1,2,3,4,5]
+arrSix.push(Infinity)
+
+//  for , for-of , forEach
